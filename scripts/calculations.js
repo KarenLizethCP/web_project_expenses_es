@@ -1,7 +1,7 @@
 let budgetValue = 0;
 let totalExpensesValue = 0;
 
-const expensesEntries = [
+const expenseEntries = [
   ["groceries", 33],
   ["restaurants", 50],
   ["transport", 12],
@@ -10,3 +10,8 @@ const expensesEntries = [
   ["groceries", 28],
   ["subscriptions", 12],
 ];
+
+for (let i = 0; i < expenseEntries.length; i++) {
+  totalExpensesValue += expenseEntries[i][1];
+  console.log(`Valor total de los gastos: ${totalExpensesValue}`);
+}
