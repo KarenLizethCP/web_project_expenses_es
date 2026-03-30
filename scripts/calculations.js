@@ -84,3 +84,9 @@ function calculateLargestCategory() {
 
   return largestCategory;
 }
+
+function addExpenseEntry(newEntry) {
+  expenseEntries.push(newEntry);
+
+  totalExpensesValue += newEntry[1];
+}
